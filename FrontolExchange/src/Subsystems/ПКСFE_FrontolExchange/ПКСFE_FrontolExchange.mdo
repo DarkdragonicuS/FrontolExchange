@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c72f19ee-4eeb-42e2-a5bf-c37a8028aa41">
+  <name>ПКСFE_FrontolExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Frontol Exchange</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.ПКСFE_FrontolExchangeHTTP</content>
+  <content>HTTPService.ПКСFE_FrontolExchange</content>
+</mdclass:Subsystem>

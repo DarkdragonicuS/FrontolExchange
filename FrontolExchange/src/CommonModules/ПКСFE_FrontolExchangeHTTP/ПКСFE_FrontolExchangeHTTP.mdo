@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e6dfd94-7319-43bd-87ea-d4946319ceac">
+  <name>ПКСFE_FrontolExchangeHTTP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Frontol Exchange HTTP</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

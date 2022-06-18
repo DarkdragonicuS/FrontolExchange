@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e52ebc20-ebcd-4f34-91ee-26d908c9a65d" extendedConfigurationObject="8a0d007a-c42b-4c51-96ad-23e2b2b9a72c">
+  <producedTypes>
+    <selectionType typeId="0cc972d9-82ff-499d-abd4-a8d37b86f21d" valueTypeId="e8f081e1-bb93-4c66-af86-ed5e9da6faef"/>
+    <listType typeId="94df0ce3-ce07-4a93-a0d9-3d610fb43fa2" valueTypeId="7a56d91f-42d0-4156-913e-851e50cc286e"/>
+    <managerType typeId="82f4b6a2-73b3-423c-b13c-c1527f69e199" valueTypeId="d73647ca-01e1-4c7b-ac9f-634b4ffcc4a4"/>
+    <recordSetType typeId="baa714a8-9512-4864-84dd-7feaadb23ac6" valueTypeId="6cf50321-2994-4ada-918d-b1740a9ff17f"/>
+    <recordKeyType typeId="78fca26e-1220-4b6d-b66d-2bf3b060215a" valueTypeId="709f9642-91e5-4d0d-8278-4cc0fdb53bc9"/>
+    <recordType typeId="0b210dc4-2ee0-4e5f-b3c8-c5fa82629469" valueTypeId="ee32f784-5d56-490b-999c-3a5f99db4e70"/>
+    <recordManagerType typeId="2698965b-419d-445d-b01c-9ee7852073c9" valueTypeId="dcd96030-d956-4ea0-8f6d-f34a3e1ea099"/>
+  </producedTypes>
+  <name>ШтрихкодыНоменклатуры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <dimensions uuid="853a203b-2e1b-4e6e-b980-468272e4665d" extendedConfigurationObject="5cbb350c-f647-46e3-97b6-b6e4ac5067b8">
+    <name>Номенклатура</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Номенклатура</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </dimensions>
+  <dimensions uuid="02862010-f05a-424a-b448-67af6fc9671d" extendedConfigurationObject="9f0ef300-dea2-476f-91a8-d22b242cfed3">
+    <name>Штрихкод</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+  </dimensions>
+</mdclass:InformationRegister>

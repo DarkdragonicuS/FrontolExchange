@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="10c3a259-8856-401e-92c9-791be6fe1f74">
+  <name>пксFrontolExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Frontol Exchange</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <commandInterface>Extended</commandInterface>
+    <mainSectionCommandInterface>Extended</mainSectionCommandInterface>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
+    <defaultStyle>Extended</defaultStyle>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="98f10c51-9b7b-491f-b155-96228c7a28cc"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="737229c2-7b6b-4146-b074-c148661ab442"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="871a23e5-5a1e-4d1e-b418-39fa8e18e871"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="7085cff8-a24b-4d15-b0d4-4e4998b11084"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="70afcf24-872d-48a8-8cc9-f9f3052ebec3"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="29e2fe6c-1f57-4889-b57e-285ba8a8504a"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="e62e9253-8445-464f-9d9e-c8c09b9fc851"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>ПКСFE_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.16</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.ПКСFE_ОсновнаяРоль</defaultRoles>
+  <vendor>ООО &quot;ПК-Сервис&quot;</vendor>
+  <version>1.0</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>Version8_2EnableTaxi</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.16</compatibilityMode>
+  <languages uuid="0bac978b-7fd2-4192-ae43-d8e8765ef21f">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ПКСFE_FrontolExchange</subsystems>
+  <roles>Role.ПКСFE_ОсновнаяРоль</roles>
+  <commonModules>CommonModule.ПКСFE_FrontolExchangeHTTP</commonModules>
+  <httpServices>HTTPService.ПКСFE_FrontolExchange</httpServices>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.КатегорииЦен</catalogs>
+  <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.ШтрихкодыНоменклатуры</informationRegisters>
+</mdclass:Configuration>

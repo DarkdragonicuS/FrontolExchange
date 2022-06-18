@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be46e8c9-b5c6-4ea0-b668-f57dad26bf4e">
+  <name>ПКСFE_FrontolExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Frontol Exchange</value>
+  </synonym>
+  <rootURL>API</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="1cda55d4-4d7b-4b6d-96c1-041c29e30b3a">
+    <name>API</name>
+    <synonym>
+      <key>ru</key>
+      <value>API</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="fccc49df-527a-41bf-bf17-0a66b6637ff7">
+      <name>API</name>
+      <synonym>
+        <key>ru</key>
+        <value>API</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>API</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
