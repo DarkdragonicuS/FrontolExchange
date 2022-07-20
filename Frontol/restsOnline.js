@@ -7,10 +7,9 @@ password = "";
 serverAddress = "localhost";
 baseName = "book";
 
-function init()
+function checkServer()
 {
-
-xmlhttp = new ActiveXObject("MsXml2.ServerXMLHTTP");
+  xmlhttp = new ActiveXObject("MsXml2.ServerXMLHTTP");
   try
     {
         request = "/";
@@ -41,6 +40,12 @@ xmlhttp = new ActiveXObject("MsXml2.ServerXMLHTTP");
     frontol.actions.showError("Нет связи с сервером Далион. " + xmlhttp.responseText);
 
     return -1;
+}
+
+function init()
+{
+
+  checkServer();
 
 }
 
