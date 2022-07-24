@@ -13,20 +13,19 @@ function checkServer()
   try
     {
         request = "/";
-
         xmlhttp.open("GET", GetDalionHttpAdress()+request, false);
-        xmlhttp.setRequestHeader("Authorization","Basic " + authString(login,password));
     }
     catch (E)
     {
         frontol.actions.showError("Нет связи с сервером Далион. " + E.description);
         return -1;
     }
-    xmlhttp.setRequestHeader("Content-Type", "application/json");
-    xmlhttp.setRequestHeader("Accept", "application/json");
     try
     {
-        xmlhttp.send(null);
+      xmlhttp.setRequestHeader("Authorization","Basic " + authString(login,password));
+      xmlhttp.setRequestHeader("Content-Type", "application/json");
+      xmlhttp.setRequestHeader("Accept", "application/json");
+      xmlhttp.send(null);
     }
     catch (E)
     {
@@ -37,9 +36,11 @@ function checkServer()
     {
       return 0
     }
-    frontol.actions.showError("Нет связи с сервером Далион. " + xmlhttp.responseText);
-
-    return -1;
+    else
+    {
+      frontol.actions.showError("Нет связи с сервером Далион. " + xmlhttp.responseText);
+      return -xmlhttp.status;
+    }
 }
 
 function init()
