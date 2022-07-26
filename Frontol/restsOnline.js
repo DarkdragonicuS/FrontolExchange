@@ -17,7 +17,7 @@ function checkServer()
     }
     catch (E)
     {
-        frontol.actions.showError("Нет связи с сервером Далион. " + E.description);
+        frontol.actions.showMessage("Нет связи с сервером Далион. " + E.description);
         return -1;
     }
     try
@@ -29,7 +29,7 @@ function checkServer()
     }
     catch (E)
     {
-        frontol.actions.showError("Нет связи с сервером Далион. " + E.description);
+        frontol.actions.showMessage("Нет связи с сервером Далион. " + E.description);
         return -999;
     }
     if(xmlhttp.status == 200)
@@ -38,7 +38,7 @@ function checkServer()
     }
     else
     {
-      frontol.actions.showError("Нет связи с сервером Далион. " + xmlhttp.responseText);
+      frontol.actions.showMessage("Нет связи с сервером Далион. " + xmlhttp.responseText);
       return -xmlhttp.status;
     }
 }
